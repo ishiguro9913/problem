@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 株式会社iimon 技術試験
 
-Things you may want to cover:
+## サーバーサイド　B問題　提出物
 
-* Ruby version
+Ruby on Railsにて作成しました。
+ご確認お願いいたします。
 
-* System dependencies
+以下問題文
 
-* Configuration
+Django / Ruby on Rails / Laravel / Spring framework / Play Frameworkのどれかを使用して下記要件を満たすwebアプリケーションを作成してください。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- アカウントの新規作成/ログイン機能
+- 文字列の投稿機能(ログイン済みユーザーのみ可能)
+- 投稿された文字列の一覧ページ(非ログイン済みユーザーも閲覧可能)

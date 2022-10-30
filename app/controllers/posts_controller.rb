@@ -25,6 +25,6 @@ class PostsController < ApplicationController
   end
 
   def not_authenticated
-    redirect_to login_path, danger: t('.success')
+    redirect_to login_path, warning: t('.fail')
   end
 end

@@ -26,5 +26,6 @@ ja:
     new:
       title: '掲示板作成'
       fail: '投稿するにはログインが必要です'
-    bookmarks:
-      title: 'ブックマーク一覧'
+    create:
+      success: '投稿に成功しました'
+      fail: '投稿に失敗しました'

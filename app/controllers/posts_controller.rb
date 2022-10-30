@@ -8,8 +8,9 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
-      redirect_to new_post_path
+      redirect_to posts_path, success: t('.success')
     else
+      flash.now['danger'] = t('.fail')
       render :new
     end
   end
@@ -25,6 +26,6 @@ class PostsController < ApplicationController
   end
 
   def not_authenticated
-    redirect_to login_path
+    redirect_to login_path, warning: t('.fail')
   end
 end

@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :require_login
   def new
     @post = Post.new
   end
@@ -17,5 +18,9 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :body)
+  end
+
+  def not_authenticated
+    redirect_to login_path
   end
 end

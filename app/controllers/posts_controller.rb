@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :require_login
+  before_action :require_login,only: %i[new create]
   def new
     @post = Post.new
   end
@@ -12,6 +12,10 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def index
+    @posts = Post.all.includes(:user).order(created_at: :desc)
   end
 
   private

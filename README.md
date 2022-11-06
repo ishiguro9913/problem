@@ -23,7 +23,7 @@ $ cd problem
 
 gemをインストールしてください
 ```
-bundle install
+$ bundle install
 ```
 
 データベースを作成してください
